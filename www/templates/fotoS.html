@@ -1,0 +1,23 @@
+<ion-view title="Foto's" id="page3">
+  <ion-content padding="true" class="has-header">
+    <div class="list card" id="fotoS-card22">
+     <ion-item class="item-icon-left assertive" id="fotoS-list-item30">
+       <i class="icon ion-android-camera"></i>Vlijtingen Brandt2016</ion-item>
+     <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
+       <div class=" item item-image" width="60%">
+         <img src="{{imageurl}}" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+       </div>
+     </div>
+     <div class="item item-body" id="fotoS-list-item-container2">
+       <div id="fotoS-markdown8" class="show-list-numbers-and-dots">
+         <p style="margin-top:0px;color:#000000;">Neem of kies een foto</p>
+       </div>
+       <div id="fotoS-button-bar2" class="button-bar">
+         <button id="fotoS-button13" class="button button-assertive  button-block button-outline icon ion-ios-photos" ng-click="getPicture()"></button>
+         <button id="fotoS-button14" class="button button-assertive  button-block icon ion-android-camera" ng-click="takePicture()"></button>
+         <button id="fotoS-button18" style="border-radius:2px 2px 2px 2px;" class="button button-assertive  button-block button-outline icon ion-android-send" ng-click="verzendfoto()"></button>
+       </div>
+     </div>
+   </div>
+  </ion-content>
+</ion-view>

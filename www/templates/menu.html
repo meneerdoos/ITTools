@@ -1,0 +1,38 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-dark">
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="right"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="side-menu21"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="right" id="side-menu21" style="background-color:#000000;">
+    <ion-header-bar class="bar-dark">
+      <div class="title">Menu</div>
+    </ion-header-bar>
+    <ion-content padding="false" class="side-menu-right has-header ">
+      <ion-list id="menu-list2">
+        <ion-item class="item-avatar" id="menu-list-item12">
+          <img ng-src={{image}}>
+          <p ng-bind="ingelogdegebruiker"> </p>
+        </ion-item>
+        <label class="item item-input" id="berichten-input5">
+          <span class="input-label"><i class="icon ion-person placeholder-icon"></i></span>
+          <input type="text"  ng-model="data.username"  placeholder="username">
+        </label>
+        <label class="item item-input" id="berichten-input5">
+          <span class="input-label"><i class="icon ion-locked placeholder-icon"></i></span>
+          <input type="text"  ng-model="data.password"  placeholder="password">
+        </label>
+
+        <a class="facebook-sign-in button button-block button-outline" ng-click="inloggen()">Login </a>
+        <a class="button button-assertive button-block button-outline" ng-click="uitloggen()">Log Out</a>
+        <a ui-sref="menu.registreren" class="button button-dark  button-block ">registreren</a>
+
+
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

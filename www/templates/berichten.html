@@ -1,0 +1,30 @@
+<ion-view title="Berichten" id="page2">
+  <ion-content padding="true" class="has-header">
+    <h3 id="berichten-heading1" style="color:#FFFFFF;text-align:center;">Verzoeknummer</h3>
+    <div class="spacer" style="height: 100px;"></div>
+    <form id="berichten-form4" class="list">
+      <label class="item item-input" id="berichten-input5">
+        <span class="input-label"><i class="icon ion-person placeholder-icon"></i></span>
+        <input type="text"  ng-model="data.gebruiker"  placeholder="Naam">
+      </label>
+      <label class="item item-input" id="berichten-input4">
+        <span class="input-label"><i class="icon ion-person-stalker placeholder-icon"></i></span>
+        <input type="text" ng-model="data.artiest" placeholder="Artiest">
+      </label>
+      <label class="item item-input" id="berichten-input5">
+        <span class="input-label"><i class="icon ion-music-note placeholder-icon"></i></span>
+        <input type="text"  ng-model="data.nummer"  placeholder="Nummer">
+      </label>
+      <label class="item item-input" id="berichten-input5">
+        <span class="input-label"><i class="icon ion-document-text placeholder-icon"></i></span>
+        <input type="text"  ng-model="data.comment"  placeholder="comment">
+      </label>
+
+      <div class="spacer" style="height: 100px;"></div>
+      <div id="berichten-button-bar1" class="button-bar">
+        <button id="berichten-button11" style="border-radius:40px 40px 40px 40px;" class="button button-assertive  button-block" ng-click="bericht()" >Send</button>
+    
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
