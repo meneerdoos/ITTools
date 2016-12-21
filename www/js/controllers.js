@@ -19,6 +19,7 @@ function ($scope, $stateParams,$cordovaSQLite,$cordovaDialogs) {
   firebase.database().ref('berichten/' + $scope.data.gebruiker).set({
     artiest:$scope.data.artiest,
     nummer: $scope.data.nummer,
+    comment: $scope.data.comment,
   });
 //tonen van alert(native)
   $cordovaDialogs.alert('Uw verzoeknummer werd verzonden', 'Proficiat', 'ok')
